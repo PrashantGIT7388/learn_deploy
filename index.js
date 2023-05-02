@@ -12,32 +12,9 @@ app.use(express.json())
 app.use("/users",userRouter)
 
 
-// app.get("/",(req,res)=>{
-//     res.send("Home Page")
-// })
-
-// app.get("/contacts",(req,res)=>{
-//     res.send("Contacts Page")
-// })
-
-// app.get("/about",(req,res)=>{
-//     res.send("About Page")
-// })
-
-// Proctected
 app.use(auth)
 app.use("/notes",noteRouter)
-// app.get("/movie",(req,res)=>{
-  
-//     res.status(200).send("Movie Data")
-   
-// })
 
-// app.get("/series",(req,res)=>{
- 
-//     res.status(200).send("Series Data")
-   
-// })
 
 
 
